@@ -1,0 +1,19 @@
+# Main Libraries
+django
+fastapi
+
+# Server Libraries
+uvicorn
+
+# AI LIbraries
+google-genai
+
+# Side Libraries
+dotenv
+colorama
+whitenoise
+pydantic
+
+# Database Libraries
+dj_database_url
+psycopg2

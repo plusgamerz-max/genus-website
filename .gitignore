@@ -1,0 +1,13 @@
+# Ignoring PyCache
+__pycache__/
+*.pyc
+*.egg-info/
+.env
+
+# Ignoring genus files
+.genus
+credentials.json
+drive_token.json
+
+# Ignoring VS Code workspace files and virtual environment
+.venv/
