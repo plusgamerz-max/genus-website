@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 from django.conf import settings
 from django.http import FileResponse, Http404
 import os
@@ -13,5 +13,5 @@ def favicon_ico(_):
     raise Http404("favicon.ico doesn't exist!")
 
 # Pages
-def home(_):
-    return HttpResponse("Hello!")
+def home(request):
+    return render(request, "home.html")

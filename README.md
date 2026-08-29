@@ -105,7 +105,7 @@ HOST=0.0.0.0
 PORT=80
 DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1
-DB1_URL=sqlite:///db.sqlite3
+DB1_URL=postgresql:///db_url
 ```
 
 ---

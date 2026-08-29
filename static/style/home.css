@@ -1,0 +1,102 @@
+/* Root */
+:root {
+    --font-color: white;
+    --main-color: rgb(25, 25, 25);
+    --sidebar-color: rgba(0,0,0,0.8);
+    --prompt-color: rgba(60,60,60,0.5)
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--main-color);
+    align-items: flex-start;
+}
+
+/* Fonts and Colors */
+p, span, h1, h2, h3 {
+    color: var(--font-color);
+    font-family: monospace;
+}
+
+/* Main */
+.main {
+    background-color: var(--main-color);
+    min-height: 100dvh;
+    padding: 25px;
+    flex: 1;
+    position: relative; /* Anchor point for prompt-box */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--sidebar-color);
+    height: 95dvh;
+    width: 200px; /* Set a fixed width */
+
+    padding: 15px;
+    padding-left: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    position: sticky;
+    top: 0;
+    flex-shrink: 0; /* Prevents sidebar from shrinking */
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sidebar-links a {
+    display: flex;
+    gap: 8px;  /* Spacing between icon and text */
+    color: var(--font-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+.sidebar-links a img {
+    color: white;
+    width: 18px;    /* Fixed icon width */
+    height: 18px;   /* Fixed icon height */
+    object-fit: contain;
+    flex-shrink: 0; /* Prevents the icon from squishing */
+    filter: brightness(0) invert(1);
+}
+.sidebar-links span {
+    font-size: 16px;
+}
+/* hover an active state on the link */
+.sidebar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar-links a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Prompt Box */
+#prompt-box {
+    position: fixed;
+    top: 90vh;
+    align-items: center;
+    width: 70vh;
+    color: var(--font-color);
+    background-color: var(--prompt-color);
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    font-size: 15px;
+    backdrop-filter: blur(10px);
+
+    left: 50%;
+    transform: translateX(-50%); /* Shifts left by 50% of its own width to center perfectly */
+}

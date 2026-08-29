@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Genus Core - Web UI</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="/static/style/home.css">
+</head>
+<body>
+    <!--Sidebar-->
+    <div class="sidebar">
+        <h2>Genus Core</h2>
+
+        <div class="sidebar-links">
+            <a href="#" class="active">
+                <img src="/static/icons/dashboard.svg">
+                <span>Dashboard</span>
+            </a>
+            <a href="#">
+                <img src="/static/icons/brain.svg">
+                <span>Agents</span>
+            </a>
+            <a href="#">
+                <img src="/static/icons/work.svg">
+                <span>Workflows</span>
+            </a>
+            <a href="#">
+                <img src="/static/icons/info.svg">
+                <span>About</span>
+            </a>
+        </div>
+    </div>
+
+    <!--Main-->
+    <div class="main">
+        <h1>Welcome to Genus Core</h1>
+        <p>Genus Core Web UI is your centralized, high-performance control panel designed to seamlessly manage agent routines, background tasks, and backend API interactions.</p>
+        <p>Powered by a hybrid Django and FastAPI ASGI architecture, this interface bridges robust server-side rendering with real-time asynchronous data endpoints.</p>
+        <p>Use the prompt box below to interact with your autonomous agent or monitor live system telemetry across your workspace.</p>
+
+        <p>A lot of data</p>
+    </div>
+
+    <input type="text" id="prompt-box" placeholder="Type a prompt for Genus Core...">
+    
+    <!--Script-->
+    <script src="/static/script/home.js"></script>
+</body>
+</html>

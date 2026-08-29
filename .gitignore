@@ -11,3 +11,7 @@ drive_token.json
 
 # Ignoring VS Code workspace files and virtual environment
 .venv/
+genus_web.code-workspace
+
+# Ignoring whitenoise static folders
+staticfiles

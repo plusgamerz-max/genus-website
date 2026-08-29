@@ -1,0 +1,23 @@
+Business Source License 1.1
+
+Copyright (c) 2026 PlusStudio Corp.
+
+Licensed under the Business Source License 1.1 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:
+
+https://mariadb.com/bsl11/
+
+## Definition Terms
+* **Licensor:** PlusStudio Corp.
+* **Software:** Genus Website (genus_web) and Genus Core Web UI.
+* **Change Date:** 3 years from the first release date (or as defined by the Licensor).
+* **Change License:** MIT License (or another designated permissive license upon expiration).
+
+## Permitted Use
+You may use, modify, distribute, and execute the Software for individual use, internal business operations, evaluation, and testing purposes, provided that such use does not involve offering the Software as a managed, hosted, or paid SaaS (Software-as-a-Service) competing product.
+
+## Restrictions
+1. **No Resale:** You may not sell, rent, lease, or commercially redistribute the Software or any modified derivative of it as a standalone product.
+2. **No Competing Managed Service:** You may not provide the Software to third parties as a hosted or paid service without express written permission from PlusStudio Corp.
+
+## Disclaimer
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
