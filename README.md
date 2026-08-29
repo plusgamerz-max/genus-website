@@ -1,6 +1,6 @@
 # Genus Website
 
-<div>
+<div align="center">
 
 ![Genus Core](https://img.shields.io/badge/Genus-Core%20Web%20UI-blueviolet?style=for-the-badge)
 ![Django](https://img.shields.io/badge/Django-5.2-green?style=for-the-badge&logo=django)
