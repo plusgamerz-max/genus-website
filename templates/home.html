@@ -12,7 +12,9 @@
 <body>
     <!--Sidebar-->
     <div class="sidebar">
-        <h2>Genus Core</h2>
+        <div class="sidebar-title">
+            <h2>Genus Core</h2>
+        </div>
 
         <div class="sidebar-links">
             <a href="#" class="active">
@@ -28,7 +30,7 @@
                 <span>Workflows</span>
             </a>
             <a href="#">
-                <img src="/static/icons/info.svg">
+                <img src="/static/icons/info_circle.svg">
                 <span>About</span>
             </a>
         </div>
@@ -41,10 +43,15 @@
         <p>Powered by a hybrid Django and FastAPI ASGI architecture, this interface bridges robust server-side rendering with real-time asynchronous data endpoints.</p>
         <p>Use the prompt box below to interact with your autonomous agent or monitor live system telemetry across your workspace.</p>
 
-        <p>A lot of data</p>
+        <span>A lot of data
+            Ok, its a lot of data!
+        </span>
     </div>
 
-    <input type="text" id="prompt-box" placeholder="Type a prompt for Genus Core...">
+    <div class="prompt-container">
+        <input id="prompt-input" type="text" placeholder="Ask Anything...">
+        <button id="prompt-button" onclick="console.log('Hello World!')"><img id="prompt-btn-icon" src="/static/icons/arrow_forward.svg" alt="⤴"></button>
+    </div>
     
     <!--Script-->
     <script src="/static/script/home.js"></script>

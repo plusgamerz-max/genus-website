@@ -2,8 +2,9 @@
 :root {
     --font-color: white;
     --main-color: rgb(25, 25, 25);
-    --sidebar-color: rgba(0,0,0,0.8);
-    --prompt-color: rgba(60,60,60,0.5)
+    --sidebar-color: rgba(0,0,0,0.6);
+    --prompt-color: rgba(60,60,60,0.5);
+    --border-color: rgba(255,255,255,0.1);
 }
 
 /* Body */
@@ -38,16 +39,18 @@ p, span, h1, h2, h3 {
     width: 200px; /* Set a fixed width */
 
     padding: 15px;
-    padding-left: 20px;
+    padding-left: 30px;
 
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
     border-radius: 20px;
 
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%); /* Safari needs the prefix */
 
     position: sticky;
     top: 0;
     flex-shrink: 0; /* Prevents sidebar from shrinking */
+
 }
 
 .sidebar-links {
@@ -84,19 +87,50 @@ p, span, h1, h2, h3 {
 }
 
 /* Prompt Box */
-#prompt-box {
+.prompt-container {
+    display: flex;
+    flex-grow: 1;
     position: fixed;
-    top: 90vh;
-    align-items: center;
-    width: 70vh;
-    color: var(--font-color);
-    background-color: var(--prompt-color);
-    padding: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    top: 85dvh;
+    height: 20px;
+    width: 70dvh;
+    border: 1px solid var(--border-color);
     border-radius: 25px;
-    font-size: 15px;
-    backdrop-filter: blur(10px);
+    padding: 15px;
 
+    /* Shadow */
+
+    /* Glassy Look */
+    background: rgba(255, 255, 255, 0.08); /* slight tint, not fully transparent */
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%); /* Safari needs the prefix */
+
+    /* Aligning in center */
     left: 50%;
     transform: translateX(-50%); /* Shifts left by 50% of its own width to center perfectly */
+}
+#prompt-input {
+    width: 100%;
+    color: var(--font-color);
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+}
+#prompt-input:hover,
+#prompt-input:focus {
+    border: none;
+    outline: none;
+}
+#prompt-button {
+    position: relative;
+    border-radius: 50%;
+    height: 40px;
+    width: 41px;
+    bottom: 10px;
+    border: none;
+    background-image: linear-gradient(rgba(60,60,255,0.8), rgba(60,60,255,0.5));
+
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
 }
