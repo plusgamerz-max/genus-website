@@ -20,4 +20,5 @@ urlpatterns = [
 ]
 
 if settings.DEBUG:
-    urlpatterns =+ debug_urlpatterns
+    for item in debug_urlpatterns:
+        urlpatterns.append(item)
