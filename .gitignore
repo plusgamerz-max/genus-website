@@ -15,3 +15,6 @@ genus_web.code-workspace
 
 # Ignoring whitenoise static folders
 staticfiles
+
+# Notes and plans
+notes/

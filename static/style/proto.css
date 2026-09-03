@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: auto;
+    min-height: 30px;
+}
+
+textarea {
+    resize: none;
+    width: 70%;
+    padding: 0px;
+    max-height: 200px;
+}

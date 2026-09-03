@@ -1,4 +1,4 @@
-const textarea = document.getElementById('prompt-input');
+const textarea = document.getElementById('input');
 
 textarea.addEventListener('input', function () {
     if (this.value === '') {

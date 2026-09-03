@@ -6,5 +6,6 @@ urlpatterns = [
     path('favicon.ico', views.favicon_ico),
 
     # Pages
-    path('home', views.home, name='home')
+    path('home', views.home, name='home'),
+    path('proto', views.proto, name='prototype')
 ]

@@ -15,3 +15,6 @@ def favicon_ico(_):
 # Pages
 def home(request):
     return render(request, "home.html")
+
+def proto(request):
+    return render(request, "proto.html")

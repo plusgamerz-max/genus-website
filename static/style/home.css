@@ -23,6 +23,11 @@ p, span, h1, h2, h3 {
     font-family: monospace;
 }
 
+/* Icons */
+.icon {
+    filter: brightness(0) invert(1);
+}
+
 /* Main */
 .main {
     background-color: var(--main-color);
@@ -52,7 +57,6 @@ p, span, h1, h2, h3 {
     flex-shrink: 0; /* Prevents sidebar from shrinking */
 
 }
-
 .sidebar-links {
     display: flex;
     flex-direction: column;
@@ -85,18 +89,34 @@ p, span, h1, h2, h3 {
 .sidebar-links a.active {
     background-color: rgba(255, 255, 255, 0.2);
 }
+.sidebar-title { /* Sidebar Title */
+    display: flex;
+    flex-direction: row;
+}
+.sidebar-title img {
+    margin-left: auto;
+}
 
 /* Prompt Box */
 .prompt-container {
     display: flex;
     flex-grow: 1;
     position: fixed;
-    top: 85dvh;
-    height: 20px;
+    bottom: 5dvh;
+    height: auto;   /* Lets container grow with text */
+    min-height: 20px;
+    max-height: 150px;
     width: 70dvh;
+
+    align-items: center;
     border: 1px solid var(--border-color);
-    border-radius: 25px;
-    padding: 15px;
+    border-radius: 50px;
+
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    flex-direction: row;
 
     /* Shadow */
 
@@ -110,11 +130,24 @@ p, span, h1, h2, h3 {
     transform: translateX(-50%); /* Shifts left by 50% of its own width to center perfectly */
 }
 #prompt-input {
-    width: 100%;
+    flex: 1;
     color: var(--font-color);
     background-color: transparent;
     font-size: 15px;
+    resize: none;
+
+    margin-left: 10px;
+    margin-right: 5px;
     border: none;
+
+    line-height: 1.4;
+    padding: 0;
+
+    overflow: hidden;
+    height: auto;
+    max-height: 20dvh;
+    min-height: 1.4em;
+    
 }
 #prompt-input:hover,
 #prompt-input:focus {
@@ -124,9 +157,11 @@ p, span, h1, h2, h3 {
 #prompt-button {
     position: relative;
     border-radius: 50%;
-    height: 40px;
-    width: 41px;
-    bottom: 10px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 10px;
+    height: 35px;
+    width: 36px;
     border: none;
     background-image: linear-gradient(rgba(60,60,255,0.8), rgba(60,60,255,0.5));
 
