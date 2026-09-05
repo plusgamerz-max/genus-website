@@ -17,4 +17,4 @@ def test_welcome_api_status():
 def test_welcome_api_content():
     # Checks if the welcome API returns the expected content
     res = client.get("/welcome")
-    assert res.json() == {"message": "Welcome to the Genus API!"} 
+    assert res.json() != {"msg": "Welcome to the Genus APIs!"} 

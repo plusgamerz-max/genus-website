@@ -21,4 +21,4 @@ psycopg2
 # Testing Libraries
 pytest
 pytest-django
-httpx
+httpx2
