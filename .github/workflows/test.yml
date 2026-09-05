@@ -27,4 +27,6 @@ jobs:
       - name: Run pytest
         env:
           DJANGO_SETTINGS_MODULE: web.settings
+          DB1_URL: ${{ secrets.DB1_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m pytest
