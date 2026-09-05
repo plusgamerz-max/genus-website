@@ -1,11 +1,13 @@
-#!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
+#=======================
+# Django Manager Tool
+#=======================
+
+# Initializing
+import init as _
+
+# Django's command-line utility for administrative tasks.
 import os
 import sys
-
-# Initializing Colorama
-from colorama import init as colorama_init
-colorama_init()
 
 def main():
     """Run administrative tasks."""

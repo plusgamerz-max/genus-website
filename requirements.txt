@@ -17,3 +17,8 @@ pydantic
 # Database Libraries
 dj_database_url
 psycopg2
+
+# Testing Libraries
+pytest
+pytest-django
+httpx

@@ -1,3 +1,4 @@
-from django.test import TestCase
+# from django.test import TestCase
+# who uses django.test
 
-# Create your tests here.
+# Demo doesn't deserves tests :(
